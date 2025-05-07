@@ -6,7 +6,7 @@ import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
 /**
- * AuthorDTO used to decouple response from Author Entity
+ * AuthorDTO used to decouple response/ request from Author Entity
  *
  * @Author CJL
  */
