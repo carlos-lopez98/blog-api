@@ -6,7 +6,7 @@ import com.blogplatform.blogapi.model.Post;
 import lombok.experimental.UtilityClass;
 
 /**
- * Mapper class used to map PostDTO to Post and vice versa
+ * Mapper class used to map PostDTO to Post Entity and vice versa
  *
  * @Author CJL
  */

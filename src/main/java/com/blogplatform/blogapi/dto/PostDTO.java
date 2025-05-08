@@ -19,7 +19,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Setter
 @Getter
-@ToString(includeFieldNames = false)
+@ToString
 @Builder
 public class PostDTO {
 
@@ -32,7 +32,7 @@ public class PostDTO {
     @NotBlank
     private String content;
 
-    @NotBlank
+    @NotNull
     private LocalDateTime createdAt;
 
     @NotBlank
