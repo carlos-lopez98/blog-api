@@ -20,6 +20,19 @@ public class AuthorMapperTest {
         assertEquals(author.getName(), dto.getName());
         assertEquals(author.getEmail(), dto.getEmail());
 
-        System.out.println("Successful Test Run");
+        System.out.println("Successful Test Run - Mapper is successfully mapping Author to Author DTO");
+    }
+
+    @Test
+    @DisplayName("Testing Mapping from DTO to Author")
+    void testToAuthor(){
+        AuthorDTO dto = new AuthorDTO(1L, "Hippo", "easyemail1123@gmail.com");
+        Author author = AuthorMapper.toAuthor(dto);
+
+        assertEquals(author.getEmail(), dto.getEmail());
+        assertEquals(author.getId(),dto.getId());
+        assertEquals(author.getName(), dto.getName());
+
+        System.out.println("Successful Test Run - Mapper is successfully mapping AuthorDTO to author");
     }
 }
