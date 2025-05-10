@@ -28,6 +28,15 @@ public class AuthorDTO {
     @NotBlank
     private String email;
 
+    public AuthorDTO(Long id, String name, String email) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+    }
+
+    public AuthorDTO(){
+    }
+
     public Long getId() {
         return id;
     }

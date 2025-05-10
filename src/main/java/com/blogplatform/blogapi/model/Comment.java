@@ -37,6 +37,16 @@ public class Comment {
     @Column (name = "createdAt")
     private LocalDateTime createdAt;
 
+    public Comment(long id, String content, String posterName, Post post, LocalDateTime createdAt) {
+        this.id = id;
+        this.content = content;
+        this.posterName = posterName;
+        this.post = post;
+        this.createdAt = createdAt;
+    }
+
+    public Comment(){}
+
     public long getId() {
         return id;
     }

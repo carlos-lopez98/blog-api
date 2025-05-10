@@ -38,6 +38,16 @@ public class PostDTO {
     @NotBlank
     private Long authorId;
 
+    public PostDTO(long id, String title, String content, LocalDateTime createdAt, Long authorId) {
+        this.id = id;
+        this.title = title;
+        this.content = content;
+        this.createdAt = createdAt;
+        this.authorId = authorId;
+    }
+
+    public PostDTO(){}
+
     public long getId() {
         return id;
     }

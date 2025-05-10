@@ -36,6 +36,16 @@ public class Post {
     @JoinColumn(name = "author_id", nullable = false)
     private Author author;
 
+    public Post(long id, String title, String content, LocalDateTime createdAt, Author author) {
+        this.id = id;
+        this.title = title;
+        this.content = content;
+        this.createdAt = createdAt;
+        this.author = author;
+    }
+
+    public Post(){}
+
     public long getId() {
         return id;
     }

@@ -36,6 +36,18 @@ public class CommentDTO {
     @NotNull
     private LocalDateTime createdAt;
 
+    public CommentDTO(Long id, String content, String posterName, Long postId, LocalDateTime createdAt) {
+        this.id = id;
+        this.content = content;
+        this.posterName = posterName;
+        this.postId = postId;
+        this.createdAt = createdAt;
+    }
+
+    public CommentDTO(){
+
+    }
+
     public Long getId() {
         return id;
     }

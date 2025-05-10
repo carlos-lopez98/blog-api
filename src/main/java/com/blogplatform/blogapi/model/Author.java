@@ -27,6 +27,14 @@ public class Author {
     @Column (name = "email", nullable = false, unique = true)
     private String email;
 
+    public Author(Long id, String name, String email) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+    }
+
+    public Author(){}
+
     public Long getId() {
         return id;
     }
