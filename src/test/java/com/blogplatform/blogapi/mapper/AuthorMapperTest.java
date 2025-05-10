@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 public class AuthorMapperTest {
 
     @Test
-    @DisplayName("Testing Mapping from Author to DTO")
+    @DisplayName("Test 1: Mapping from Author to DTO")
     void testToDTO() {
         Author author = new Author(1L, "Hippo", "easyemail123@gmail.com");
         AuthorDTO dto = AuthorMapper.toDTO(author);
@@ -24,7 +24,7 @@ public class AuthorMapperTest {
     }
 
     @Test
-    @DisplayName("Testing Mapping from DTO to Author")
+    @DisplayName("Test 2: Mapping from DTO to Author")
     void testToAuthor(){
         AuthorDTO dto = new AuthorDTO(1L, "Hippo", "easyemail1123@gmail.com");
         Author author = AuthorMapper.toAuthor(dto);
