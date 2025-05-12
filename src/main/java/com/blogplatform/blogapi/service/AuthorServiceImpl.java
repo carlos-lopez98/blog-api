@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * Service implementation for the Author Service
+ * Service implementation for the AuthorService
  *
  * @Author CJL
  */
