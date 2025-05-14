@@ -1,10 +1,6 @@
 package com.blogplatform.blogapi.service;
-
 import com.blogplatform.blogapi.dto.AuthorDTO;
-import com.blogplatform.blogapi.dto.PostDTO;
-import com.blogplatform.blogapi.mapper.PostMapper;
 import com.blogplatform.blogapi.model.Author;
-import com.blogplatform.blogapi.model.Post;
 import com.blogplatform.blogapi.repository.AuthorRepository;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -12,9 +8,6 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-
-import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -23,6 +16,7 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
+//TODO need to add negative test cases
 @ExtendWith(MockitoExtension.class)
 @DisplayName("Unit Tests for AuthorServiceImpl")
 public class AuthorServiceImplTest {

@@ -12,12 +12,10 @@ import java.time.LocalDateTime;
  * @Author CJL
  */
 @Getter
-@NoArgsConstructor
 @Setter
 @Entity
 @Table(name = "post")
 @ToString(includeFieldNames = false)
-@AllArgsConstructor
 public class Post {
 
     @Id
