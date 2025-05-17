@@ -15,8 +15,6 @@ import java.time.LocalDateTime;
  *
  * @Author CJL
  */
-@NoArgsConstructor
-@AllArgsConstructor
 @Setter
 @Getter
 @ToString

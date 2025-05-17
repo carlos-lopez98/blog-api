@@ -11,10 +11,8 @@ import lombok.*;
  * @Author CJL
  */
 
-@NoArgsConstructor
 @Getter
 @Setter
-@AllArgsConstructor
 @ToString (includeFieldNames = false)
 @Builder
 public class AuthorDTO {
